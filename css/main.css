@@ -96,8 +96,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+    --nav-width: 300px;
+}
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100%;
+    border-right: solid;
+}
 
+main {
+    margin-left: var(--nav-width);
+    padding: 4em;
+}
 
 /* ==========================================================================
    Helper classes
